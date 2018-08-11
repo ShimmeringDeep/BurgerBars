@@ -1,17 +1,55 @@
-li {
+/* 
+font-family: 'Hanalei Fill', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Open Sans Condensed', sans-serif; 
+*/
+
+body {
+  font-family: 'Lobster', cursive;
+  background-image: url('../pictures/bb21a3f589a7186878bc0d68bf50124c.jpg')
+}
+
+#content {
+  width: 940px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: 'Hanalei Fill', cursive;
+  font-size: 60pt;
+  text-align: center;
+  color: rgb(139, 64, 36);
+  background-color: rgba(196, 196, 58, .8);
+  width: 100%;
+  border-radius: 8px;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+}
+
+.cooked {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+}
+
+.chomped {
+  padding: 5px;
+  margin: 5px;
+}
+
+.list {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.5)
 }
 
 .label {
   font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
 }
 
 .form-group {

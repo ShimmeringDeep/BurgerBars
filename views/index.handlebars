@@ -1,28 +1,35 @@
-<h1>BurgTasting!</h1>
-
-<h2>Cooked Burgers</h2>
-
-<ul>
-  {{#each burgers}} {{#unless devoured}} {{> burgs/burger-butt devoured=true}} {{/unless}} {{/each}}
-</ul>
-
-<h2>Chomped Burgers</h2>
-
-<ul>
-  {{#each burgers}} {{#if devoured}}
-  <li>
-    {{name}}
-  </li>
-  {{/if}} {{/each}}
-</ul>
-
-<h2>Add a Burg!</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="bu">Burger Name</label>
-    <input type="text" id="bu" name="name">
+<div id='content'>
+  <h1>BurgTasting!</h1>
+  <div class='cooked'>
+    <h2>Cooked Burgers</h2>
+    <div class="list">
+      <ul>
+        {{#each burgers}} {{#unless devoured}} {{> burgs/burger-butt devoured=true}} {{/unless}} {{/each}}
+      </ul>
+    </div>
   </div>
+  <div class='chomped'>
+    <h2>Chomped Burgers</h2>
+    <div class="list">
+      <ul>
+        {{#each burgers}} {{#if devoured}}
+        <li>
+          {{name}}
+        </li>
+        {{/if}} {{/each}}
+      </ul>
+    </div>
+  </div>
+  <div class='cooked'>
+    <h2>Add a Burg!</h2>
+    <form class="create-form">
 
-  <button type="submit">Add Burg</button>
-</form>
+      <div class="form-group">
+        <label for="bu">Burger Name</label>
+        <input type="text" id="bu" name="name">
+      </div>
+
+      <button type="submit">Add Burg</button>
+    </form>
+  </div>
+</div>
